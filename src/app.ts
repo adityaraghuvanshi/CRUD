@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 const mongoServer = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_CONNECTURL as string, {
-            dbName: "Create, Read, Update, Delete Database"
+            dbName: "CRUD-DB"
         });
         console.log("MongoDB server connected.")
     }
